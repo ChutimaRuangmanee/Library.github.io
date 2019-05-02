@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<title>BOT-ExchangeRate</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+
+<head>
+  <style>
+  table,th,td {
+    border : 1px solid black;
+    border-collapse: collapse;
+  }
+  th,td {
+    text-align: center;
+    padding: 8px;
+  }
+  tr:nth-child(even){background-color: #f2f2f2}
+  th {
+    background-color: #1a75ff;
+    color: white;
+  }
+  </style></head>
+
+<body>
+
+<div class="w3-sidebar w3-bar-block w3-light-grey" style="width:33%">
+  <div class="w3-container w3-dark-grey">
+    <h4>Menu</h4>
+  </div>
+
+  <img src="head.png" alt="head" style="width:50%">
+  <a href="index.html" class="w3-bar-item w3-button w3-red">Exchange Rate</a>
+  <a href="page2.html" class="w3-bar-item w3-button">Interest Rate <span class="w3-tag w3-red w3-right w3-margin-right"></span></a>
+
+ <!-- <a href="About.html" class="w3-bar-item w3-button">About</a>
+  <a href="Contact.html" class="w3-bar-item w3-button">Contact</a>-->
+  
+</div>
+
+<div class="w3-row-padding"></div>
+  <div class="w3-third w3-margin-bottom">
+    <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+      <li class="w3-black w3-xlarge w3-padding-32">..</li>
+      <li class="w3-padding-16"><b>..</b> ..</li>
+      <li class="w3-padding-16"><b>.</b> ..</li>
+      <li class="w3-padding-16"><b>.</b> ..</li>
+      <li class="w3-padding-16"><b>.</b> ..</li>
+      <li class="w3-padding-16">
+        <h2 class="w3-wide">.</h2>
+        <span class="w3-opacity">.</span>
+      </li>
+      <li class="w3-light-grey w3-padding-24">
+        <button class="w3-button w3-green w3-padding-large">.</button>
+      </li>
+    </ul>
+  </div>
+
+
+<div class="w3-center">
+    <img src="c1.jpg" alt="head" style="width:30%">
+    <img src="c2.jpg" alt="head" style="width:30%">
+    <br><br><br>
+
+  <button type="button" onclick="loadXMLDoc()">Get Exchange Rate</button>
+  <br><br>
+  <table id="demo"></table>
+
+<script>
+  function loadXMLDoc() {
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        myFunction(this);
+      }
+    };
+    xmlhttp.open("GET", "http://www2.bot.or.th/RSS/fxrates/fxrate-all.xml", true);
+    xmlhttp.send();
+  }
+  function myFunction(xml) {
+    var i;
+    var xmlDoc = xml.responseXML;
+    var table="<tr><th>channel</th><th>title</th><th>description</th><th>dc:date</th><th>cb:application</th></tr>";
+    var x = xmlDoc.getElementsByTagName("items");
+      for (i = 0; i <x.length; i++) { 
+        table += "<tr><td>" +
+            x[i].getElementsByTagName("channel")[0].childNodes[0].nodeValue +"</td><td>" +
+        x[i].getElementsByTagName("title")[0].childNodes[0].nodeValue +"</td><td>" +
+        x[i].getElementsByTagName("description")[0].childNodes[0].nodeValue +"</td><td>" +  
+        x[i].getElementsByTagName("dc:date")[0].childNodes[0].nodeValue +"</td><td>" +  
+        x[i].getElementsByTagName("cb:application")[0].childNodes[0].nodeValue +"</td></tr>";   
+      }
+    document.getElementById("demo").innerHTML = table;
+  }
+</script>
+</div>
+  
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<title>BOT-Interest Rate</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<head>
+  <style>
+  table,th,td {
+    border : 1px solid black;
+    border-collapse: collapse;
+  }
+  th,td {
+    padding: 5px;
+  }        
+
+  </style>
+</head>
+
+<body>
+
+<div class="w3-sidebar w3-bar-block w3-light-grey" style="width:33%">
+  <div class="w3-container w3-dark-grey">
+    <h4>Menu</h4>
+  </div>
+
+  <img src="head.png" alt="head" style="width:50%">
+  <a href="index.html" class="w3-bar-item w3-button w3-red">Exchange Rate</a>
+  <a href="page2.html" class="w3-bar-item w3-button">Interest Rate <span class="w3-tag w3-red w3-right w3-margin-right"></span></a>
+
+ <!-- <a href="About.html" class="w3-bar-item w3-button">About</a>
+  <a href="Contact.html" class="w3-bar-item w3-button">Contact</a>-->
+  
+</div>
+
+<div class="w3-right">
+    <img src="c3.jpg" alt="head" style="width:70%">
+    <br><br><br>
+
+
+    <h2>Make a table based on the value of a drop down menu.</h2>
+
+    <select id="myselect" onchange="change_myselect(this.value)">
+        <option value="">Choose an option:</option>
+        <option value="Bank">Bank</option>
+        <option value="SavingRate">Saving Rate</option>
+        <option value="FixedRate6mths">Fixed Rate for 6 months</option>
+        <option value="FixedRate12mths">Fixed Rate for 12 months</option>
+    </select>
+
+    <p id="demo"></p>
+
+    <script>
+        function change_myselect(sel) {
+        var obj, dbParam, xmlhttp, myObj, x, txt = "";
+        obj = { table: sel, limit: 20 };
+        dbParam = JSON.stringify(obj);
+        xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                myObj = JSON.parse(this.responseText);
+                txt += "<table border='1'>"
+                    for (x in myObj) {
+                        txt += "<tr><td>" + myObj[x].name + "</td></tr>";
+                    }
+                    txt += "</table>"    
+                    document.getElementById("demo").innerHTML = txt;
+            }
+        };
+        xmlhttp.open("POST", "InterestRate.php", true);
+        xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        xmlhttp.send("x=" + dbParam);
+        }
+    </script>
+
+
+</div>
+  
+</body>
+
+</html>

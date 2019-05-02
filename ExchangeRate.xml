@@ -1,0 +1,105 @@
+
+
+"http://www2.bot.or.th/RSS/fxrates/fxrate-GBP.xml","http://www2.bot.or.th/RSS/fxrates/fxrate-EUR.xml","http://www2.bot.or.th/RSS/fxrates/fxrate-JPY.xml","http://www2.bot.or.th/RSS/fxrates/fxrate-HKD.xml","http://www2.bot.or.th/RSS/fxrates/fxrate-MYR.xml","http://www2.bot.or.th/RSS/fxrates/fxrate-SGD.xml",
+"http://www2.bot.or.th/RSS/fxrates/fxrate-BND.xml","http://www2.bot.or.th/RSS/fxrates/fxrate-PHP.xml","http://www2.bot.or.th/RSS/fxrates/fxrate-IDR.xml","http://www2.bot.or.th/RSS/fxrates/fxrate-INR.xml","http://www2.bot.or.th/RSS/fxrates/fxrate-CHF.xml","http://www2.bot.or.th/RSS/fxrates/fxrate-AUD.xml","http://www2.bot.or.th/RSS/fxrates/fxrate-NZD.xml","http://www2.bot.or.th/RSS/fxrates/fxrate-CAD.xml",
+"http://www2.bot.or.th/RSS/fxrates/fxrate-SEK.xml","http://www2.bot.or.th/RSS/fxrates/fxrate-DKK.xml","http://www2.bot.or.th/RSS/fxrates/fxrate-NOK.xml","http://www2.bot.or.th/RSS/fxrates/fxrate-CNY.xml","http://www2.bot.or.th/RSS/fxrates/fxrate-MXN.xml","http://www2.bot.or.th/RSS/fxrates/fxrate-ZAR.xml","http://www2.bot.or.th/RSS/fxrates/fxrate-KRW.xml","http://www2.bot.or.th/RSS/fxrates/fxrate-TWD.xml",
+"http://www2.bot.or.th/RSS/fxrates/fxrate-KWD.xml","http://www2.bot.or.th/RSS/fxrates/fxrate-SAR.xml","http://www2.bot.or.th/RSS/fxrates/fxrate-AED.xml","http://www2.bot.or.th/RSS/fxrates/fxrate-MMK.xml","http://www2.bot.or.th/RSS/fxrates/fxrate-BDT.xml","http://www2.bot.or.th/RSS/fxrates/fxrate-CZK.xml","http://www2.bot.or.th/RSS/fxrates/fxrate-KHR.xml","http://www2.bot.or.th/RSS/fxrates/fxrate-KES.xml",
+"http://www2.bot.or.th/RSS/fxrates/fxrate-LAK.xml","http://www2.bot.or.th/RSS/fxrates/fxrate-RUB.xml","http://www2.bot.or.th/RSS/fxrates/fxrate-VND.xml","http://www2.bot.or.th/RSS/fxrates/fxrate-EGP.xml","http://www2.bot.or.th/RSS/fxrates/fxrate-PLN.xml","http://www2.bot.or.th/RSS/fxrates/fxrate-LKR.xml","http://www2.bot.or.th/RSS/fxrates/fxrate-IQD.xml","http://www2.bot.or.th/RSS/fxrates/fxrate-BHD.xml",
+"http://www2.bot.or.th/RSS/fxrates/fxrate-OMR.xml","http://www2.bot.or.th/RSS/fxrates/fxrate-JOD.xml","http://www2.bot.or.th/RSS/fxrates/fxrate-QAR.xml","http://www2.bot.or.th/RSS/fxrates/fxrate-MVR.xml","http://www2.bot.or.th/RSS/fxrates/fxrate-NPR.xml","http://www2.bot.or.th/RSS/fxrates/fxrate-PGK.xml","http://www2.bot.or.th/RSS/fxrates/fxrate-ILS.xml","http://www2.bot.or.th/RSS/fxrates/fxrate-HUF.xml",
+"http://www2.bot.or.th/RSS/fxrates/fxrate-PKR.xml"
+
+
+
+<ExchangeRate>
+    <item>
+        <country>UNITED STATES</country>
+        <currency>USD</currency>
+        <SightBill>31.5504</SightBill>
+        <Transfer>31.6361</Transfer>
+        <AverageSellingRate>31.9834</AverageSellingRate>
+    </item>
+    <item>
+        <country>UNITED KINGDOM</country>
+        <currency>GBP</currency>
+        <SightBill>40.7763</SightBill>
+        <Transfer>40.9187</Transfer>
+        <AverageSellingRate>41.7657</AverageSellingRate>
+    </item>
+    <item>
+        <country>EURO ZONE</country>
+        <currency>EUR</currency>
+        <SightBill>35.2743</SightBill>
+        <Transfer>35.3896</Transfer>
+        <AverageSellingRate>36.0972</AverageSellingRate>
+    </item>
+    <item>
+        <country>JAPAN (100 Yen)</country>
+        <currency>JPY</currency>
+        <SightBill>27.9502</SightBill>
+        <Transfer>28.0560</Transfer>
+        <AverageSellingRate>28.7708</AverageSellingRate>
+    </item>
+    <item>
+        <country>HONG KONG</country>
+        <currency>HKD</currency>
+        <SightBill>4.0019</SightBill>
+        <Transfer>4.0186</Transfer>
+        <AverageSellingRate>4.0928</AverageSellingRate>
+    </item>
+    <item>
+        <country>MALAYSIA</country>
+        <currency>MYR</currency>
+        <SightBill>7.5258</SightBill>
+        <Transfer>7.5818</Transfer>
+        <AverageSellingRate>7.8005</AverageSellingRate>
+    </item>
+    <item>
+        <country>SINGAPORE</country>
+        <currency>SGD</currency>
+        <SightBill>23.1246</SightBill>
+        <Transfer>23.2041</Transfer>
+        <AverageSellingRate>23.7416</AverageSellingRate>
+    </item>
+    <item>
+        <country>BRUNEI DARUSSALAM</country>
+        <currency>BND</currency>
+        <SightBill>22.9759</SightBill>
+        <Transfer>23.1493</Transfer>
+        <AverageSellingRate>23.8203</AverageSellingRate>
+    </item>
+    <item>
+        <country>PHILIPPINES</country>
+        <currency>PHP</currency>
+        <SightBill>0.5989</SightBill>
+        <Transfer>0.6042</Transfer>
+        <AverageSellingRate>0.6271</AverageSellingRate>
+    </item>
+    <item>
+        <country>INDONESIA (1000 Rupiah)</country>
+        <currency>IDR</currency>
+        <SightBill>2.1130</SightBill>
+        <Transfer>2.1671</Transfer>
+        <AverageSellingRate>2.3951</AverageSellingRate>
+    </item>
+    <item>
+        <country>INDIA</country>
+        <currency>INR</currency>
+        <SightBill>0.4104</SightBill>
+        <Transfer>0.4291</Transfer>
+        <AverageSellingRate>0.4926</AverageSellingRate>
+    </item>
+    <item>
+        <country>SWITZERLAND</country>
+        <currency>CHF</currency>
+        <SightBill>30.9312</SightBill>
+        <Transfer>31.0248</Transfer>
+        <AverageSellingRate>31.6535</AverageSellingRate>
+    </item>
+    <item>
+        <country>AUSTRALIA</country>
+        <currency>AUD</currency>
+        <SightBill>22.2777</SightBill>
+        <Transfer>22.3541</Transfer>
+        <AverageSellingRate>23.0968</AverageSellingRate>
+    </item>
+</ExchangeRate>
